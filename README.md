@@ -2,7 +2,7 @@
 
 ## Description
 
-This document contains analysis, reproduction steps, and remediation recommendations for three completed OWASP Juice Shop challenges: Score-Board (hidden route), DOM-XSS (Bonus Payload), and Repetitive Registration. All security testing was conducted exclusively in a controlled test environment..
+This document contains analysis, reproduction steps, and remediation recommendations for three completed OWASP Juice Shop challenges: Score-Board (hidden route), DOM-XSS (Bonus Payload), and Repetitive Registration. All security testing was conducted exclusively in a controlled test environment.
 
 ## Table of Contents
 
@@ -95,9 +95,10 @@ Navigate to `http://localhost:3000` in your web browser.
 ### Metadata
 
 - **Test Environment**: Local Juice Shop instance / Container / VM
-- **Test URL**: <https://juice-shop.herokuapp.com/#/search>
-- **Date / Time of Reproduction**: <02.11.25 / 00:00pm>
-- **Author / Tester**: <Tarik Sabanovic>
+- **Juice Shop Version**: OWASP Juice Shop (latest version)
+- **Test URL**: https://juice-shop.herokuapp.com
+- **Date / Time of Reproduction**: 02.11.2025 / 00:00
+- **Author / Tester**: Tarik Sabanovic
 
 **Note**: All activities were conducted exclusively in the described test environment.
 
@@ -117,9 +118,9 @@ Discovery and access of the hidden Score-Board route.
 
 #### Reproduction Steps
 
-1. Start the test instance in a browser (`https://juice-shop.herokuapp.com/#/search`)
+1. Start the test instance in a browser (https://juice-shop.herokuapp.com)
 2. Open DevTools → Search loaded JS bundles for routes/strings (score-board, scoreboard)
-3. Direct access: `https://juice-shop.herokuapp.com/#/search`
+3. Direct access: `https://juice-shop.herokuapp.com/#/score-board`
 
 #### Expected Result
 
@@ -238,7 +239,7 @@ The following artifacts are included:
 ### cURL — Repetitive Registration (Example)
 
 ```bash
-curl -i -X POST 'https://<TEST_URL>/api/Users/register' \
+curl -i -X POST 'https://juice-shop.herokuapp.com/api/Users/register' \
   -H 'Content-Type: application/json' \
   -d '{"email":"test@example.com","password":"P@ssw0rd!","displayName":"testuser"}'
 ```
@@ -290,4 +291,5 @@ This documentation is provided for educational and research purposes. OWASP Juic
 For questions or concerns regarding this documentation:
 
 - **Project Repository**: https://github.com/juice-shop/juice-shop
-- **Author**: <Tarik Sabanovic>
+- **Author**: Tarik Sabanovic
+- **Repository**: https://github.com/ttariik/Juice-Shop-Master
