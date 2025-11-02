@@ -95,10 +95,9 @@ Navigate to `http://localhost:3000` in your web browser.
 ### Metadata
 
 - **Test Environment**: Local Juice Shop instance / Container / VM
-- **Juice Shop Version**: <VERSION_HIER_EINTRAGEN>
-- **Test URL**: <TEST_URL_HIER_EINTRAGEN>
-- **Date / Time of Reproduction**: <DATUM_UHRZEIT_HIER_EINTRAGEN>
-- **Author / Tester**: <NAME_NACHTRAGEN>
+- **Test URL**: <https://juice-shop.herokuapp.com/#/search>
+- **Date / Time of Reproduction**: <02.11.25 / 00:00pm>
+- **Author / Tester**: <Tarik Sabanovic>
 
 **Note**: All activities were conducted exclusively in the described test environment.
 
@@ -118,9 +117,9 @@ Discovery and access of the hidden Score-Board route.
 
 #### Reproduction Steps
 
-1. Start the test instance in a browser (`<TEST_URL>`)
+1. Start the test instance in a browser (`https://juice-shop.herokuapp.com/#/search`)
 2. Open DevTools → Search loaded JS bundles for routes/strings (score-board, scoreboard)
-3. Direct access: `https://<TEST_URL>/#/score-board`
+3. Direct access: `https://juice-shop.herokuapp.com/#/search`
 
 #### Expected Result
 
@@ -291,4 +290,4 @@ This documentation is provided for educational and research purposes. OWASP Juic
 For questions or concerns regarding this documentation:
 
 - **Project Repository**: https://github.com/juice-shop/juice-shop
-- **Author**: <NAME_NACHTRAGEN>
+- **Author**: <Tarik Sabanovic>
