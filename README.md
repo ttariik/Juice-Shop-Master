@@ -2,7 +2,7 @@
 
 ## Description
 
-This document contains analysis, reproduction steps, and remediation recommendations for three completed OWASP Juice Shop challenges: Score-Board (hidden route), DOM-XSS (Bonus Payload), and Repetitive Registration. All security testing was conducted exclusively in a controlled test environment.
+This document contains analysis, reproduction steps, and remediation recommendations for three completed OWASP Juice Shop challenges: Score-Board (hidden route), DOM-XSS (Bonus Payload), and Repetitive Registration. All security testing was conducted exclusively in a controlled test environment..
 
 ## Table of Contents
 
